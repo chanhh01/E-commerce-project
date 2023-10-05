@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="EnterpriseApplication1-ejbPU" transaction-type="JTA">
+    <jta-data-source>jdbc/sample</jta-data-source>
+    <class>Model.Admins</class>
+    <class>Model.Carts</class>
+    <class>Model.Category</class>
+    <class>Model.Customers</class>
+    <class>Model.Favourite_sellers</class>
+    <class>Model.Item_variants</class>
+    <class>Model.Items</class>
+    <class>Model.Orders</class>
+    <class>Model.Payment_methods</class>
+    <class>Model.Payment_types</class>
+    <class>Model.Purchases</class>
+    <class>Model.Review_replies</class>
+    <class>Model.Reviews</class>
+    <class>Model.Sellers</class>
+    <class>Model.Shipments</class>
+    <class>Model.Users</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
